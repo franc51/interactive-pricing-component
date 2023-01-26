@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:600,800"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="white-div"></div>
+      <div class="blueish-div"></div>
+      <div class="content-container">
+        <div class="title">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign up for our 30 day trial, no credit card required.</p>
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+        </div>
+        <div class="card">
+          <div class="price-info">
+            <div class="service-description"><p>100K PAGEVIEWS</p></div>
+            <div class="service-price">
+              <h1>$</h1>
+              <h1 id="slider-value">16.00</h1>
+              <p>/ month</p>
+            </div>
+          </div>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="16"
+              class="slider"
+              id="myRange"
+              onchange="updateValue(this.value);"
+            />
+          </div>
+          <div class="billing">
+            <div class="monthly-bill">
+              <p>Monthly billing</p>
+              <input type="checkbox" id="switch" /><label for="switch"
+                >Toggle</label
+              >
+            </div>
+            <div class="yearly-bill">
+              <p>Yearly billing</p>
+              <span id="red"><p id="discount">25% discount</p></span>
+            </div>
+          </div>
+          <div class="buy-div">
+            <div class="buy-info">
+              <div class="checks">
+                <img src="images/icon-check.svg" alt="" />
+                <p>Unlimited websites</p>
+              </div>
+              <div class="checks">
+                <img src="images/icon-check.svg" alt="" />
+                <p>100% Data ownership</p>
+              </div>
+              <div class="checks">
+                <img src="images/icon-check.svg" alt="" />
+                <p>Email reports</p>
+              </div>
+            </div>
+            <div>
+              <button class="buy-button">Start my trial</button>
+            </div>
+          </div>
+        </div>
+        <p style="font-size: 18px">Designed by Francisc for 1440p</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
