@@ -217,7 +217,7 @@ label:active:after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 2rem;
+  margin: 0 0.5rem;
   color: rgb(101, 127, 153);
 }
 #red {
@@ -230,6 +230,13 @@ label:active:after {
   align-items: center;
   justify-content: center;
 }
+.showit {
+  display: block;
+}
+.dontshowit {
+  display: none;
+}
+
 #discount {
   color: rgb(230, 38, 38);
 }
