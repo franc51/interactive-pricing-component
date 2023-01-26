@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive pricing component
 
+https://franc51.github.io/interactive-pricing-component/
+
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
