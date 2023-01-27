@@ -27,13 +27,15 @@ function updateValue() {
 document.getElementById("switch").addEventListener("click", showDiscount);
 
 function showDiscount() {
-  let toggle = document.getElementById("switch").value;
-  discount = document.getElementById("discount");
-  console.log(discount);
-  console.log(toggle);
-  if (toggle.checked) {
-    discount.classList.add = "showit";
-  } else {
-    discount.classList.remove = "showit";
+  if (document.getElementById("switch").checked) {
+    let initialPrice = document.getElementById("slider-value").innerHTML;
+    console.log(initialPrice);
+    document.getElementById("slider-value").innerHTML =
+      (initialPrice * 75) / 100 + ".00";
+  } else if (document.getElementById("switch").unchecked) {
+    let discountedpr = document.getElementById("slider-value").innerHTML;
+    console.log(discountedpr);
+    document.getElementById("slider-value").innerHTML =
+      (discountedpr * 75) / 100 + ".00";
   }
 }
